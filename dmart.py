@@ -29,6 +29,21 @@ class grocery(dmart):
 
 
 
+from dmart import dmart
+class clothes(dmart):
+    def __inti__(self,category,product_name,qty,price):
+        super().__init__(category,product_name,qty,price)
+        self.colour=self.colour
+        self.size=self.size
+
+    def display_clothes_details(self):
+        print(super().display_store_details())
+        print(super().commom_features())
+        return f"colour:{self.colour}\nsize{self.size}"
+        
+
+
+
 class dmart:
     storename = "DMart"
 
